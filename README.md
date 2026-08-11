@@ -289,7 +289,7 @@ finance-rag/
 ├── api/main.py               # optional FastAPI backend
 ├── data/                     # the four quarterly PDFs
 ├── chroma_db/                # persisted vector store (gitignored)
-├── docs/                     # screenshots + generated test answers
+├── docs/                     # generated test answers (see docs/README.md)
 ├── deploy/                   # Render blueprint, Dockerfile, hosting notes
 ├── requirements.txt
 ├── .env.example
