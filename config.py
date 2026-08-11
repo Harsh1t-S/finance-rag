@@ -31,17 +31,29 @@ CHUNK_OVERLAP = 200
 
 # --- models ----------------------------------------------------------------
 
-EMBEDDING_MODEL = "text-embedding-3-small"
-LLM_MODEL = "gpt-4o"
+# The defaults are what the brief mandates. They are overridable from .env only
+# so the same code can run through an OpenAI-compatible gateway, which requires
+# provider-prefixed slugs (openai/gpt-4o) for the identical models. The OpenAI
+# SDK picks up OPENAI_BASE_URL from the environment on its own, so nothing below
+# the config layer changes.
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
 TEMPERATURE = 0.0
 
 # --- retrieval -------------------------------------------------------------
-# Questions 5-9 of the assignment need a number from the quarterly review AND
-# a clause from the policy handbook in the same context window. With top_k=3
-# all three chunks routinely come from whichever document is the stronger
-# semantic match, and the cross-document answers fail. 6 is the smallest value
-# that reliably pulls from both.
-DEFAULT_TOP_K = 6
+# The comparison questions need the net income line from four separate filings
+# in one context window, so top_k has to be large enough to span four documents
+# rather than two.
+#
+# Measured on "compare net profit across all the quarters you loaded":
+#   top_k=6  -> 3 of 4 quarters (Q1 FY2026 missing)
+#   top_k=8  -> 4 of 4 quarters
+#
+# At 6 the answer was confidently wrong: it named Q3 FY2026 at $29,789M as the
+# highest, because Q1 FY2026 at $42,097M was never retrieved. Nothing in the
+# output signalled the omission, which is why run_test_questions.py reports the
+# retrieval spread for every multi-quarter question.
+DEFAULT_TOP_K = 8
 
 COLLECTION_NAME = "apple_quarterly_results"
 
