@@ -143,7 +143,65 @@ with st.expander("Upload and index documents", expanded=not stats()["total_chunk
 
 # --- ask -------------------------------------------------------------------
 
+
+def render_answer(entry: dict, *, latest: bool, show_chunks: bool) -> None:
+    """
+    Render one question and its answer.
+
+    Sources are grouped by filing rather than listed flat, because on a
+    comparison question the thing an analyst needs to see at a glance is how
+    many quarters the answer actually drew on. A flat list of eight rows hides
+    that; grouped headings make a missing quarter obvious.
+    """
+    result = entry["result"]
+
+    if latest:
+        st.markdown("### Answer")
+    else:
+        st.divider()
+        st.markdown(f"**Earlier question:** {entry['question']}")
+
+    st.markdown(result["answer"])
+
+    if result["sources"]:
+        by_document: dict[str, list[dict]] = {}
+        for src in result["sources"]:
+            by_document.setdefault(src["file"], []).append(src)
+
+        st.markdown("**Sources**")
+        for filename, rows in by_document.items():
+            pages = ", ".join(
+                f"p.{r['page']} (similarity {r['similarity']})" for r in rows
+            )
+            st.write(f"• **{filename}** — {pages}")
+
+        st.caption(
+            f"Retrieved from {len(by_document)} of the indexed filings. A "
+            f"comparison answered from fewer quarters than it names reads "
+            f"exactly like a correct one, so check this number."
+        )
+
+    if show_chunks and result["chunks"]:
+        st.markdown("**Retrieved chunks**")
+        st.caption(
+            "What the model actually saw. If an answer is wrong, check here "
+            "before blaming GPT-4o."
+        )
+        for i, chunk in enumerate(result["chunks"], start=1):
+            with st.expander(
+                f"Chunk {i} — {chunk['file']} p.{chunk['page']} "
+                f"(similarity {chunk['similarity']})"
+            ):
+                st.text(chunk["text"])
+
+
 st.subheader("Ask a question")
+
+# Answers accumulate rather than replacing each other, so an analyst can
+# compare what the system said across several questions instead of losing the
+# previous answer on every submission.
+if "history" not in st.session_state:
+    st.session_state.history = []
 
 picked = st.selectbox(
     "Sample questions from the assignment (optional)",
@@ -154,7 +212,18 @@ picked = st.selectbox(
 default_text = "" if picked == "—" else picked
 question = st.text_area("Question", value=default_text, height=90)
 
-if st.button("Ask", type="primary"):
+indexed = stats()["total_chunks"] > 0
+
+ask_clicked = st.button("Ask", type="primary", disabled=not indexed)
+
+if not indexed:
+    st.info(
+        "Nothing is indexed yet, so there is nothing to answer from. Use "
+        "**Index the files in data/** above — the Ask button unlocks once the "
+        "collection has chunks in it."
+    )
+
+if ask_clicked:
     if not question.strip():
         st.warning("Type a question first.")
     else:
@@ -166,26 +235,17 @@ if st.button("Ask", type="primary"):
                 result = None
 
         if result:
-            st.markdown("### Answer")
-            st.markdown(result["answer"])
+            st.session_state.history.insert(
+                0, {"question": question.strip(), "result": result}
+            )
 
-            if result["sources"]:
-                st.markdown("### Sources")
-                for src in result["sources"]:
-                    st.write(
-                        f"• **{src['file']}** — page {src['page']} "
-                        f"(similarity {src['similarity']})"
-                    )
+for n, entry in enumerate(st.session_state.history):
+    render_answer(entry, latest=(n == 0), show_chunks=show_chunks)
 
-            if show_chunks and result["chunks"]:
-                st.markdown("### Retrieved chunks")
-                st.caption(
-                    "What the model actually saw. If an answer is wrong, check "
-                    "here before blaming GPT-4o."
-                )
-                for i, chunk in enumerate(result["chunks"], start=1):
-                    with st.expander(
-                        f"Chunk {i} — {chunk['file']} p.{chunk['page']} "
-                        f"(similarity {chunk['similarity']})"
-                    ):
-                        st.text(chunk["text"])
+# Rendered after the answers so it appears on the same run that produces one,
+# rather than only after the next interaction.
+if st.session_state.history:
+    st.divider()
+    if st.button("Clear answers"):
+        st.session_state.history = []
+        st.rerun()
