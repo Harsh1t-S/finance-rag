@@ -1,10 +1,10 @@
 # Test question results
 
-Generated 11 August 2026, 17:53
+Generated 11 August 2026, 21:35
 
 - Chunks indexed: **50** (Apple_Q1_FY2026_Earnings_Press_Release.pdf: 12, Apple_Q2_FY2026_Earnings_Press_Release.pdf: 12, Apple_Q3_FY2026_Earnings_Press_Release.pdf: 11, Apple_Q4_FY2025_Earnings_Press_Release.pdf: 15)
 - Chunk size / overlap: **1200 / 200**
-- Embeddings: `openai/text-embedding-3-small` · LLM: `openai/gpt-4o` · top_k: **8**
+- Embeddings: `text-embedding-3-small` · LLM: `gpt-4o` · top_k: **8**
 
 ---
 
@@ -14,22 +14,22 @@ Generated 11 August 2026, 17:53
 
 **Answer:**
 
-Total revenue in the most recent quarter, which is the third quarter of fiscal year 2026, was $109.4 billion [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1].
+The total revenue in the most recent quarter loaded, which is the third quarter of fiscal year 2026, was $109.4 billion [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1].
 
 **Sources retrieved:**
 
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4703)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4704)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4577)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4577)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4576)
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4415)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.441)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4397)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4414)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4398)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4389)
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 5 (similarity 0.4297)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4703)
+**Chunk 1** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4704)
 
 ```
 132,729	
@@ -291,7 +291,7 @@ $
 (1)
 ```
 
-**Chunk 3** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4577)
+**Chunk 3** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4576)
 
 ```
 6,478	
@@ -442,7 +442,7 @@ software	innovations	and	important	new	child	safety	features.”
 “We	are	very	pleased	with	our	record	business	performance	during	the	quarter,	which	set	new	June	quarter	records	for	both	EPS	and	operating	cash
 ```
 
-**Chunk 5** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.441)
+**Chunk 5** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4414)
 
 ```
 Americas
@@ -495,7 +495,7 @@ $
 (1)
 ```
 
-**Chunk 6** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.4397)
+**Chunk 6** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.4398)
 
 ```
 EX-99.1	
@@ -602,26 +602,28 @@ $
 
 **Answer:**
 
-The highest net profit was in Q1 FY2026, with a net income of $42,097 million [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3]. 
+The net profit for each quarter is as follows:
 
-Here are the net profits for the other quarters:
-- Q2 FY2026: $29,578 million [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
-- Q3 FY2026: $29,789 million [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
-- Q4 FY2025: $27,466 million [Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 3].
+- Q1 FY2026: Net income was $42,097 million [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Q2 FY2026: Net income was $29,578 million [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Q3 FY2026: Net income was $29,789 million [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Q4 FY2025: Net income was $27,466 million [Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 3].
+
+The highest net profit was in Q1 FY2026, with a net income of $42,097 million.
 
 **Sources retrieved:**
 
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.428)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4258)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4279)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4259)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4169)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3983)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3982)
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 5 (similarity 0.3922)
 
 **Retrieval spread:** 4 of 4 quarters retrieved
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.428)
+**Chunk 1** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4279)
 
 ```
 6,478	
@@ -750,7 +752,7 @@ $
 (1)
 ```
 
-**Chunk 2** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4258)
+**Chunk 2** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4259)
 
 ```
 132,729	
@@ -1012,7 +1014,7 @@ $
 (1)
 ```
 
-**Chunk 4** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4074)
+**Chunk 4** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4072)
 
 ```
 Apple	Inc.
@@ -1134,7 +1136,7 @@ $
 $
 ```
 
-**Chunk 5** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4028)
+**Chunk 5** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4026)
 
 ```
 Apple	Inc.
@@ -1250,7 +1252,7 @@ Diluted
 $
 ```
 
-**Chunk 6** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4001)
+**Chunk 6** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3999)
 
 ```
 Apple	Inc.
@@ -1372,7 +1374,7 @@ $
 $
 ```
 
-**Chunk 7** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3983)
+**Chunk 7** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3982)
 
 ```
 Apple	Inc.
@@ -1565,10 +1567,10 @@ In the latest quarter, which is the third quarter of fiscal year 2026, Apple rep
 
 **Sources retrieved:**
 
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.5171)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.5173)
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.5155)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.5127)
-- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.5116)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.5126)
+- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.5117)
 - `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4942)
 - `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 6 (similarity 0.4922)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4907)
@@ -1577,7 +1579,7 @@ In the latest quarter, which is the third quarter of fiscal year 2026, Apple rep
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.5171)
+**Chunk 1** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.5173)
 
 ```
 132,729	
@@ -1838,7 +1840,7 @@ $
 (1)
 ```
 
-**Chunk 3** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.5127)
+**Chunk 3** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.5126)
 
 ```
 EX-99.1	
@@ -1860,7 +1862,7 @@ software	innovations	and	important	new	child	safety	features.”
 “We	are	very	pleased	with	our	record	business	performance	during	the	quarter,	which	set	new	June	quarter	records	for	both	EPS	and	operating	cash
 ```
 
-**Chunk 4** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.5116)
+**Chunk 4** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.5117)
 
 ```
 Provision	for	income	taxes
@@ -2043,7 +2045,7 @@ That	included	the	addition	of	the	iPhone	17e	and	the	M4-powered	iPad	Air,	along	
 around	the	world.”
 ```
 
-**Chunk 8** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.6 (similarity 0.4767)
+**Chunk 8** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.6 (similarity 0.4768)
 
 ```
 Apple	Inc.
@@ -2145,15 +2147,15 @@ That information is not available in the uploaded documents.
 
 **Sources retrieved:**
 
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.3987)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.3987)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 2 (similarity 0.3987)
-- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.382)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.3981)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.3981)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 2 (similarity 0.3981)
+- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.3819)
 - `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.3022)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3987)
+**Chunk 1** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3981)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -2165,7 +2167,7 @@ manufacture,	introduction,	and	transition	of	products	and	services	in	highly	com
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
 ```
 
-**Chunk 2** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3987)
+**Chunk 2** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3981)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -2177,7 +2179,7 @@ manufacture,	introduction,	and	transition	of	products	and	services	in	highly	com
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
 ```
 
-**Chunk 3** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.3987)
+**Chunk 3** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.3981)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -2189,7 +2191,7 @@ manufacture,	introduction,	and	transition	of	products	and	services	in	highly	com
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
 ```
 
-**Chunk 4** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.382)
+**Chunk 4** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3819)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -2334,7 +2336,7 @@ $
 (1)
 ```
 
-**Chunk 6** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.2986)
+**Chunk 6** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.299)
 
 ```
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
@@ -2347,7 +2349,7 @@ looking	statements,	which	speak	only	as	of	the	date	they	are	made.
 Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	in	1984.	Today,	Apple	leads	the	world	in	innovation	with	iPhone,	iPad,
 ```
 
-**Chunk 7** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.2986)
+**Chunk 7** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.299)
 
 ```
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
@@ -2360,7 +2362,7 @@ looking	statements,	which	speak	only	as	of	the	date	they	are	made.
 Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	in	1984.	Today,	Apple	leads	the	world	in	innovation	with	iPhone,	iPad,
 ```
 
-**Chunk 8** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.2986)
+**Chunk 8** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.299)
 
 ```
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
@@ -2383,21 +2385,53 @@ Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	
 
 **Answer:**
 
-That information is not available in the uploaded documents.
+To determine which business segment or geography grew fastest, we need to compare the growth rates of each segment or geography between two quarters. The context provides data for Q1 FY2026 and Q1 FY2025, as well as Q2 FY2026 and Q2 FY2025, and Q3 FY2026 and Q3 FY2025.
+
+For Q1 FY2026 compared to Q1 FY2025:
+
+- Americas: $58,529 million in Q1 FY2026 vs. $52,648 million in Q1 FY2025, growth of 11.2% [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Europe: $38,146 million in Q1 FY2026 vs. $33,861 million in Q1 FY2025, growth of 12.7% [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Greater China: $25,526 million in Q1 FY2026 vs. $18,513 million in Q1 FY2025, growth of 37.9% [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Japan: $9,413 million in Q1 FY2026 vs. $8,987 million in Q1 FY2025, growth of 4.7% [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Rest of Asia Pacific: $12,142 million in Q1 FY2026 vs. $10,291 million in Q1 FY2025, growth of 18.0% [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
+
+Greater China had the fastest growth rate of 37.9% in Q1 FY2026 compared to Q1 FY2025.
+
+For Q2 FY2026 compared to Q2 FY2025:
+
+- Americas: $45,093 million in Q2 FY2026 vs. $40,315 million in Q2 FY2025, growth of 11.9% [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Europe: $28,055 million in Q2 FY2026 vs. $24,454 million in Q2 FY2025, growth of 14.7% [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Greater China: $20,497 million in Q2 FY2026 vs. $16,002 million in Q2 FY2025, growth of 28.1% [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Japan: $8,401 million in Q2 FY2026 vs. $7,298 million in Q2 FY2025, growth of 15.1% [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Rest of Asia Pacific: $9,138 million in Q2 FY2026 vs. $7,290 million in Q2 FY2025, growth of 25.3% [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
+
+Greater China had the fastest growth rate of 28.1% in Q2 FY2026 compared to Q2 FY2025.
+
+For Q3 FY2026 compared to Q3 FY2025:
+
+- Americas: $45,781 million in Q3 FY2026 vs. $41,198 million in Q3 FY2025, growth of 11.1% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Europe: $29,395 million in Q3 FY2026 vs. $24,014 million in Q3 FY2025, growth of 22.4% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Greater China: $18,816 million in Q3 FY2026 vs. $15,369 million in Q3 FY2025, growth of 22.4% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Japan: $6,554 million in Q3 FY2026 vs. $5,782 million in Q3 FY2025, growth of 13.4% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+- Rest of Asia Pacific: $8,871 million in Q3 FY2026 vs. $7,673 million in Q3 FY2025, growth of 15.6% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+
+Europe and Greater China both had the fastest growth rate of 22.4% in Q3 FY2026 compared to Q3 FY2025.
+
+Overall, Greater China had the highest growth rate in Q1 and Q2, while Europe and Greater China shared the highest growth rate in Q3.
 
 **Sources retrieved:**
 
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3946)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3933)
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3857)
-- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3678)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.3645)
+- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3677)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.3644)
 - `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3215)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3175)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3149)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3148)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3946)
+**Chunk 1** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3933)
 
 ```
 Americas
@@ -2579,7 +2613,7 @@ $
 (1)
 ```
 
-**Chunk 3** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3678)
+**Chunk 3** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3677)
 
 ```
 Provision	for	income	taxes
@@ -2709,7 +2743,7 @@ $
 (1)
 ```
 
-**Chunk 4** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.3645)
+**Chunk 4** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.3644)
 
 ```
 132,729	
@@ -2841,7 +2875,7 @@ $
 (1)
 ```
 
-**Chunk 5** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3515)
+**Chunk 5** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3514)
 
 ```
 Apple	Inc.
@@ -2989,7 +3023,7 @@ That	included	the	addition	of	the	iPhone	17e	and	the	M4-powered	iPad	Air,	along	
 around	the	world.”
 ```
 
-**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.3149)
+**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.3148)
 
 ```
 EX-99.1	
@@ -3021,27 +3055,44 @@ software	innovations	and	important	new	child	safety	features.”
 
 **Answer:**
 
-The operating margin for each quarter is as follows:
+To calculate the operating margin for each quarter, we use the formula:
 
-- Q1 FY2026: Operating income was $50,852 million and total net sales were $143,756 million, resulting in an operating margin of approximately 35.38% [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3].
-- Q2 FY2026: Operating income was $35,885 million and total net sales were $111,184 million, resulting in an operating margin of approximately 32.26% [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3].
-- Q3 FY2026: Operating income was $35,695 million and total net sales were $109,417 million, resulting in an operating margin of approximately 32.62% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3].
+\[ \text{Operating Margin} = \left( \frac{\text{Operating Income}}{\text{Total Net Sales}} \right) \times 100 \]
 
-The trend in operating margin from Q1 to Q3 FY2026 is slightly falling, from approximately 35.38% in Q1 to approximately 32.62% in Q3.
+**Q1 FY2026:**
+- Operating Income: $50,852 million
+- Total Net Sales: $143,756 million
+- Operating Margin: \(\left( \frac{50,852}{143,756} \right) \times 100 = 35.38\%\) [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 3]
+
+**Q2 FY2026:**
+- Operating Income: $35,885 million
+- Total Net Sales: $111,184 million
+- Operating Margin: \(\left( \frac{35,885}{111,184} \right) \times 100 = 32.26\%\) [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 3]
+
+**Q3 FY2026:**
+- Operating Income: $35,695 million
+- Total Net Sales: $109,417 million
+- Operating Margin: \(\left( \frac{35,695}{109,417} \right) \times 100 = 32.62\%\) [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 3]
+
+**Trend:**
+- From Q1 to Q2, the operating margin decreased from 35.38% to 32.26%.
+- From Q2 to Q3, the operating margin slightly increased from 32.26% to 32.62%.
+
+Overall, the trend shows a decrease from Q1 to Q2, followed by a slight increase from Q2 to Q3.
 
 **Sources retrieved:**
 
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4116)
-- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4049)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4011)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3953)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 5 (similarity 0.3696)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4119)
+- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.4052)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4015)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3958)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 5 (similarity 0.3718)
 
 **Retrieval spread:** 4 of 4 quarters retrieved
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4116)
+**Chunk 1** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4119)
 
 ```
 6,478	
@@ -3170,7 +3221,7 @@ $
 (1)
 ```
 
-**Chunk 2** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.407)
+**Chunk 2** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4072)
 
 ```
 Apple	Inc.
@@ -3292,7 +3343,7 @@ $
 $
 ```
 
-**Chunk 3** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4049)
+**Chunk 3** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.4052)
 
 ```
 Apple	Inc.
@@ -3414,7 +3465,7 @@ $
 $
 ```
 
-**Chunk 4** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4011)
+**Chunk 4** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4015)
 
 ```
 Apple	Inc.
@@ -3530,7 +3581,7 @@ Diluted
 $
 ```
 
-**Chunk 5** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.3975)
+**Chunk 5** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.3979)
 
 ```
 132,729	
@@ -3662,7 +3713,7 @@ $
 (1)
 ```
 
-**Chunk 6** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3953)
+**Chunk 6** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3958)
 
 ```
 Apple	Inc.
@@ -3768,7 +3819,7 @@ $
 124,300
 ```
 
-**Chunk 7** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3942)
+**Chunk 7** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3947)
 
 ```
 Provision	for	income	taxes
@@ -3898,7 +3949,7 @@ $
 (1)
 ```
 
-**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.5 (similarity 0.3696)
+**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.5 (similarity 0.3718)
 
 ```
 Apple	Inc.
@@ -3981,23 +4032,15 @@ Cash	generated	by/(used	in)	investing	activities
 
 **Answer:**
 
-Yes, dividends were declared in multiple quarters:
-
-1. For Q3 FY2026, a cash dividend of $0.27 per share was declared, payable on August 13, 2026, to shareholders of record as of the close of business on August 10, 2026 [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1].
-
-2. For Q2 FY2026, a cash dividend of $0.27 per share was declared, payable on May 14, 2026, to shareholders of record as of the close of business on May 11, 2026 [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 1].
-
-3. For Q1 FY2026, a cash dividend of $0.26 per share was declared, payable on February 12, 2026, to shareholders of record as of the close of business on February 9, 2026 [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 1].
-
-4. For Q4 FY2025, a cash dividend of $0.26 per share was declared, payable on November 13, 2025, to shareholders of record as of the close of business on November 10, 2025 [Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 1].
+Yes, a dividend was declared. For Q3 FY2026, Apple declared a cash dividend of $0.27 per share, payable on August 13, 2026, to shareholders of record as of the close of business on August 10, 2026 [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1].
 
 **Sources retrieved:**
 
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.5107)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 1 (similarity 0.4707)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.4639)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 1 (similarity 0.4708)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.464)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.448)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4177)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4178)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4144)
 - `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 5 (similarity 0.4095)
 - `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 6 (similarity 0.408)
@@ -4020,7 +4063,7 @@ governance,	and	details	related	to	its	annual	meeting	of	shareholders.
 ®
 ```
 
-**Chunk 2** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.1 (similarity 0.4707)
+**Chunk 2** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.1 (similarity 0.4708)
 
 ```
 extraordinary	lineup	of	products	as	we	head	into	the	holiday	season.”
@@ -4034,7 +4077,7 @@ apple.com/investor/earnings-call.	The	webcast	will	be	available	for	replay	for	a
 Apple	periodically	provides	information	for	investors	on	its	corporate	website,	apple.com,	and	its	investor	relations	website,	investor.apple.com.	This
 ```
 
-**Chunk 3** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.4639)
+**Chunk 3** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.464)
 
 ```
 installed	base	now	has	more	than	2.5	billion	active	devices,	which	is	a	testament	to	incredible	customer	satisfaction	for	the	very	best	products	and
@@ -4063,7 +4106,7 @@ additional	program	to	repurchase	up	to	$100	billion	of	the	Company’s	common	st
 Apple	will	provide	live	streaming	of	its	Q2	2026	financial	results	conference	call	beginning	at	2:00	p.m.	PT	on	April	30,	2026,	at
 ```
 
-**Chunk 5** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.4 (similarity 0.4177)
+**Chunk 5** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.4 (similarity 0.4178)
 
 ```
 149,326	
@@ -4225,20 +4268,20 @@ The documents mention several risks, headwinds, or challenges, including:
 
 2. Risks relating to the design, manufacture, introduction, and transition of products and services in highly competitive and rapidly changing markets, including reliance on third parties for components, technology, manufacturing, applications, services, support, and content [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 2].
 
-3. Risks relating to information technology system failures, network disruptions, and failure to protect, loss of, or unauthorized access to, or release of, data [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 2].
+3. Risks relating to information technology system failures, network disruptions, and failure to protect, loss of, or unauthorized access to, or release of, data [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 2].
 
-4. Effects of unfavorable legal proceedings, government investigations, and complex and changing laws and regulations [Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 2].
+4. Effects of unfavorable legal proceedings, government investigations, and complex and changing laws and regulations [Apple_Q1_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q2_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 2; Apple_Q4_FY2025_Earnings_Press_Release.pdf, p. 2].
 
 **Sources retrieved:**
 
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.4185)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.4185)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 2 (similarity 0.4185)
-- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.4082)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.4184)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.4184)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 2 (similarity 0.4184)
+- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 2 (similarity 0.4081)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.4185)
+**Chunk 1** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.4184)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -4250,7 +4293,7 @@ manufacture,	introduction,	and	transition	of	products	and	services	in	highly	com
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
 ```
 
-**Chunk 2** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.4185)
+**Chunk 2** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.4184)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -4262,7 +4305,7 @@ manufacture,	introduction,	and	transition	of	products	and	services	in	highly	com
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
 ```
 
-**Chunk 3** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.4185)
+**Chunk 3** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.4184)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -4274,7 +4317,7 @@ manufacture,	introduction,	and	transition	of	products	and	services	in	highly	com
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
 ```
 
-**Chunk 4** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.4082)
+**Chunk 4** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.4081)
 
 ```
 This	press	release	contains	forward-looking	statements,	within	the	meaning	of	the	Private	Securities	Litigation	Reform	Act	of	1995.	These	forward-
@@ -4287,7 +4330,7 @@ changing	markets,	including	from	reliance	on	third	parties	for	components,	techn
 risks	relating	to	information	technology	system	failures,	network	disruptions,	and	failure	to	protect,	loss	of,	or	unauthorized	access	to,	or	release	of,
 ```
 
-**Chunk 5** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3654)
+**Chunk 5** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3655)
 
 ```
 risks	relating	to	information	technology	system	failures,	network	disruptions,	and	failure	to	protect,	loss	of,	or	unauthorized	access	to,	or	release	of,
@@ -4300,7 +4343,7 @@ Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	
 Mac,	AirPods,	Apple	Watch,	and	Apple	Vision	Pro.	Apple’s	six	software	platforms	—	iOS,	iPadOS,	macOS,	watchOS,	visionOS,	and	tvOS	—	provide
 ```
 
-**Chunk 6** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.353)
+**Chunk 6** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3528)
 
 ```
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
@@ -4313,7 +4356,7 @@ looking	statements,	which	speak	only	as	of	the	date	they	are	made.
 Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	in	1984.	Today,	Apple	leads	the	world	in	innovation	with	iPhone,	iPad,
 ```
 
-**Chunk 7** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3529)
+**Chunk 7** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.3528)
 
 ```
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
@@ -4326,7 +4369,7 @@ looking	statements,	which	speak	only	as	of	the	date	they	are	made.
 Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	in	1984.	Today,	Apple	leads	the	world	in	innovation	with	iPhone,	iPad,
 ```
 
-**Chunk 8** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.2 (similarity 0.3529)
+**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.2 (similarity 0.3528)
 
 ```
 parties	for	components,	technology,	manufacturing,	applications,	services,	support,	and	content;	risks	relating	to	information	technology	system
@@ -4349,15 +4392,15 @@ Apple	revolutionized	personal	technology	with	the	introduction	of	the	Macintosh	
 
 **Answer:**
 
-In the third quarter of fiscal 2026, Apple reported a record revenue of $109.4 billion, marking a 16% increase year over year [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1]. The company achieved double-digit revenue growth across iPhone, Mac, and Services, with a gross margin of 50.1% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1]. Diluted earnings per share rose to $2.02, up 29% from the previous year, benefiting from a $0.11 impact due to tariff refunds [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1].
+In the third quarter of fiscal 2026, Apple reported a record revenue of $109.4 billion, marking a 16% increase year over year [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1]. The company achieved double-digit revenue growth across iPhone, Mac, and Services, with a gross margin of 50.1% [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1]. Diluted earnings per share rose by 29% to $2.02, benefiting from a $0.11 impact due to tariff refunds [Apple_Q3_FY2026_Earnings_Press_Release.pdf, p. 1].
 
 **Sources retrieved:**
 
 - `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.3988)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3953)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.395)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.394)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3928)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3949)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3939)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3927)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 1 (similarity 0.3911)
 
 <details><summary>Retrieved chunks</summary>
@@ -4624,7 +4667,7 @@ $
 (1)
 ```
 
-**Chunk 3** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.395)
+**Chunk 3** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3949)
 
 ```
 Apple	Inc.
@@ -4730,7 +4773,7 @@ $
 124,300
 ```
 
-**Chunk 4** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.394)
+**Chunk 4** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3939)
 
 ```
 6,478	
@@ -4859,7 +4902,7 @@ $
 (1)
 ```
 
-**Chunk 5** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3939)
+**Chunk 5** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3938)
 
 ```
 Apple	Inc.
@@ -4981,7 +5024,7 @@ $
 $
 ```
 
-**Chunk 6** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.3928)
+**Chunk 6** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.1 (similarity 0.3927)
 
 ```
 EX-99.1	
@@ -5154,17 +5197,17 @@ That information is not available in the uploaded documents.
 
 **Sources retrieved:**
 
-- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4375)
+- `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4374)
 - `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.437)
-- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4112)
+- `Apple_Q1_FY2026_Earnings_Press_Release.pdf` page 4 (similarity 0.4113)
 - `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 4 (similarity 0.4103)
-- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.4029)
+- `Apple_Q4_FY2025_Earnings_Press_Release.pdf` page 3 (similarity 0.403)
 - `Apple_Q2_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3985)
-- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3903)
+- `Apple_Q3_FY2026_Earnings_Press_Release.pdf` page 3 (similarity 0.3902)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.4 (similarity 0.4375)
+**Chunk 1** — Apple_Q2_FY2026_Earnings_Press_Release.pdf p.4 (similarity 0.4374)
 
 ```
 134,641	
@@ -5244,7 +5287,7 @@ $
 359,241
 ```
 
-**Chunk 3** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.4 (similarity 0.4112)
+**Chunk 3** — Apple_Q1_FY2026_Earnings_Press_Release.pdf p.4 (similarity 0.4113)
 
 ```
 Term	debt
@@ -5318,7 +5361,7 @@ $
 364,980
 ```
 
-**Chunk 5** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.4029)
+**Chunk 5** — Apple_Q4_FY2025_Earnings_Press_Release.pdf p.3 (similarity 0.403)
 
 ```
 132,729	
@@ -5671,7 +5714,7 @@ Total	liabilities
 Commitments	and	contingencies
 ```
 
-**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3903)
+**Chunk 8** — Apple_Q3_FY2026_Earnings_Press_Release.pdf p.3 (similarity 0.3902)
 
 ```
 6,478	

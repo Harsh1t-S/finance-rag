@@ -32,6 +32,12 @@ Rules:
    is not available in the uploaded documents." Do not guess, do not use general
    knowledge, and do not fill a gap with a figure you happen to know. An analyst
    will act on this and an invented number is worse than no answer.
+   This applies to facts that are absent, not to arithmetic. If the context
+   carries the figures a question needs but not the derived quantity itself --
+   a growth rate, a margin, a change between two periods -- work it out from
+   those figures and show the inputs you used. Refusing to divide two numbers
+   that are both on the page in front of you is a wrong answer, not a careful
+   one.
 2. Always state which fiscal quarter each figure belongs to. "Revenue was $109.4
    billion" is useless without the quarter attached.
 3. Cite the document name and page number inline for each fact you assert,

@@ -53,6 +53,16 @@ TEMPERATURE = 0.0
 # highest, because Q1 FY2026 at $42,097M was never retrieved. Nothing in the
 # output signalled the omission, which is why run_test_questions.py reports the
 # retrieval spread for every multi-quarter question.
+# 8 is the value with evidence behind it: it is the smallest that reaches all
+# four filings on the comparison questions.
+#
+# It was raised to 10 and then 12 in an attempt to rescue the commentary
+# question ("what did management say about the demand outlook"), which retrieves
+# financial tables and no CEO or CFO quotes and then correctly refuses. Neither
+# helped, so it is back at 8 rather than carrying a larger context window that
+# buys nothing. Eight of the fifty chunks do contain the quotes, all on page 1
+# of the four releases; plain semantic similarity simply ranks the statements
+# tables above them for that phrasing. See the README.
 DEFAULT_TOP_K = 8
 
 COLLECTION_NAME = "apple_quarterly_results"

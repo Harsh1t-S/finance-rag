@@ -103,6 +103,24 @@ from it. 1200 is the top of the permitted range and keeps each table intact. The
 200-character overlap keeps a heading like "Segment Operating Performance"
 attached to the table beneath it.
 
+### The prompt rule that stopped a wrong refusal
+
+Question 5 asks which segment grew fastest and by how much. The press releases
+give the current and prior-year figures for every geography but never state a
+growth rate, so answering requires dividing two numbers that are both present.
+
+Under the original grounding rule the system refused: *"That information is not
+available in the uploaded documents."* Confident, well-formed, and wrong. The
+refusal rule now distinguishes an absent fact from an absent calculation:
+
+> This applies to facts that are absent, not to arithmetic. If the context
+> carries the figures a question needs but not the derived quantity itself — a
+> growth rate, a margin, a change between two periods — work it out from those
+> figures and show the inputs you used.
+
+The system now computes each geography's year-over-year growth from the figures
+in context and cites the page they came from.
+
 ### top_k = 8
 
 Questions 2, 3 and 6 compare figures **across quarters** — they need chunks from
@@ -164,6 +182,12 @@ Rules:
    is not available in the uploaded documents." Do not guess, do not use general
    knowledge, and do not fill a gap with a figure you happen to know. An analyst
    will act on this and an invented number is worse than no answer.
+   This applies to facts that are absent, not to arithmetic. If the context
+   carries the figures a question needs but not the derived quantity itself --
+   a growth rate, a margin, a change between two periods -- work it out from
+   those figures and show the inputs you used. Refusing to divide two numbers
+   that are both on the page in front of you is a wrong answer, not a careful
+   one.
 2. Always state which fiscal quarter each figure belongs to. "Revenue was $109.4
    billion" is useless without the quarter attached.
 3. Cite the document name and page number inline for each fact you assert,
@@ -304,6 +328,29 @@ report gross margin and label it operating margin, which is exactly the kind of
 confidently-wrong output an analyst would act on. Retrieval is fine; the chunks
 contain the right rows. A calculation tool would fix this properly, and adding
 one is outside what the brief permits.
+
+**The management-commentary question does not work, and raising `top_k` does not
+fix it.** Question 4 asks what management said about the demand outlook. The
+system answers *"That information is not available in the uploaded documents."*
+That refusal is honest — the retrieved chunks genuinely contain no commentary —
+but the answer is in the corpus, so the system is wrong.
+
+The diagnosis is precise. Eight of the fifty chunks contain a Tim Cook or Kevan
+Parekh quote, two per filing, all on page 1. Retrieval never reaches them: for
+the phrasing *"demand outlook or business environment"*, the condensed
+statements of operations rank higher than the quotes that actually answer it.
+`top_k` was raised to 10 and then 12 to test whether it was simply a depth
+problem. It is not — the commentary chunks did not appear at either setting, so
+`top_k` is back at 8, the smallest value that reaches all four filings on the
+comparison questions.
+
+This is a limitation of plain semantic similarity on this corpus, not a bug.
+Every release opens with similar financial-highlights language, and the quotes
+sit inside that same page-1 text. The fix within the scope of this assignment
+would be to prefix each chunk with a source and section label before embedding
+it, so "management commentary" becomes part of what is matched rather than
+something the retriever has to infer. That changes every stored vector, so it is
+recorded here as the identified next step rather than applied late and untested.
 
 **Cross-quarter comparisons fail silently at low `top_k`.** At `top_k=3` the
 answer to "compare net profit across all the quarters" is fluent, well formatted,
